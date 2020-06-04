@@ -1,9 +1,9 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-
-plt.plot([1, 2, 3, 4])
-plt.ylabel('some numbers')
-plt.show()
+# import matplotlib.pyplot as plt
+#
+# plt.plot([1, 2, 3, 4])
+# plt.ylabel('some numbers')
+# plt.show()
 
 names1880 = pd.read_csv('datasets/babynames/yob1880.txt', names=['name', 'sex', 'births'])
 
@@ -24,5 +24,5 @@ print(names)
 total_births = names.pivot_table('births', index='year', columns='sex', aggfunc=sum)
 print(total_births)
 
-plt.plot(total_births, title='Total births by sex and year')
+# plt.plot(total_births, title='Total births by sex and year')
 
